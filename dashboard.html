@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Storage Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <h2>☁️ CloudDrive</h2>
+
+        <ul>
+
+            <li class="active">🏠 Dashboard</li>
+
+            <li>📂 My Files</li>
+
+            <li>⬆ Upload</li>
+
+            <li>🕒 Recent</li>
+
+            <li>🗑 Trash</li>
+
+            <li id="logoutBtn">🚪 Logout</li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+        <!-- Navbar -->
+
+        <div class="navbar">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Files...">
+
+            <div class="profile">
+
+                👤 Niharika
+
+            </div>
+
+        </div>
+
+        <!-- Storage Card -->
+
+        <div class="storage-card">
+
+            <h2>Storage Usage</h2>
+
+            <div class="progress">
+
+                <div class="progress-bar" id="progressBar"></div>
+
+            </div>
+
+            <p id="storageText">0 MB / 100 MB Used</p>
+
+        </div>
+
+        <!-- Upload Section -->
+
+        <div class="upload-section">
+
+            <input
+                type="file"
+                id="fileInput">
+
+            <button id="uploadBtn">
+
+                Upload File
+
+            </button>
+
+        </div>
+
+        <!-- File Table -->
+
+        <div class="table-section">
+
+            <h2>My Files</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>File Name</th>
+
+                        <th>Type</th>
+
+                        <th>Size</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="fileTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Recent Activity -->
+
+        <div class="activity">
+
+            <h2>Recent Activity</h2>
+
+            <ul id="activityList">
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
